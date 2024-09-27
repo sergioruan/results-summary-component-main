@@ -95,7 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 3rem;
+    padding: 2rem;
     gap: 2rem;
 }
 #tittleP2 {
@@ -112,7 +112,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 0.5rem;
-    gap: 1rem;
+    gap: 2rem;
     border-radius: 10px;
 }
 .icons {
@@ -162,7 +162,7 @@ body {
 #submit {
     padding: 1rem 2rem;
     background-color: var(--DarkGrayBlue);
-    border: 1px solid var(--DarkGrayBlue);
+    border: none;
     color: var(--White);
     font-weight: 400;
     border-radius: 25px;

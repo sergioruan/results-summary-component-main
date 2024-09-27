@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Hanken';
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+:root {
+    /* Cores primárias */
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    /* Cores dos degradês */
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+    /* Cores neutras */
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+    /* Cores de fundo*/
+    --RedBackground: hsl(0, 100%, 95%);
+    --YellowBackground: hsl(39, 100%, 95%);
+    --GreenBackground: hsl(166, 100%, 95%);
+    --BlueBackground: hsl(234, 85%, 95%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Hanken', sans-serif;
+    font-size: 18px;
+}
+body {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+}
+#card {
+    display: flex;
+    flex-flow: row wrap;
+    width: 730px;
+    
+    border-radius: 25px;
+    box-shadow: 1px 1px 8px var(--LightLavender);
+}
+#p1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 3rem;
+    width: 50%;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, var(--LightSlateBlue), var(--LightRoyalBlue))
+}
+#result {
+    color: var(--LightLavender);
+    font-size: 22px;
+    font-weight: 600;
+}
+#notes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 00rem;
+    padding: 2rem 3rem;
+    background: linear-gradient(to top, var(--PersianBlue), var(--VioletBlue));
+    border-radius: 50%;
+}
+#n76 {
+    color: var(--White);
+    font-weight: bold;
+    font-size: 3rem;
+}
+#n100 {
+    font-size: 14px;
+    color: var(--LightLavender)
+}
+#tittle {
+    font-weight: bold;
+    color: var(--White);
+    font-size: 26px;
+}
+#descript {
+    font-weight: 300;
+    color: var(--PaleBlue);
+}
+#p2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3rem;
+    gap: 2rem;
+}
+#tittleP2 {
+    color: var(--DarkGrayBlue);
+    font-size: 26px;
+}
+#categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.caixas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.7rem;
+    gap: 3rem;
+    border-radius: 10px;
+}
+.icons {
+    display: flex;
+    gap: 0.5rem;
+}
+.score {
+    display: flex;
+    gap: 0.5rem;
+}
+.realScore {
+    color: var(--DarkGrayBlue);
+    font-weight: bold;
+}
+.totalScore {
+    color: var(--LightLavender);
+    font-weight: 400;
+}
+#reaction {
+    background-color: rgba(255, 0, 0, 0.120);
+}
+#reactionTxt {
+    color: var(--LightRed);
+    font-weight: bold;
+}
+#memory {
+    background-color: var(--YellowBackground);
+}
+#memoryTxt {
+    color: var(--OrangeYellow);
+    font-weight: bold;
+}
+#verbal {
+    background-color: var(--GreenBackground);
+}
+#verbalTxt {
+    color: var(--GreenTeal);
+    font-weight: bold;
+}
+#visual {
+    background-color: var(--BlueBackground);
+}
+#visualTxt {
+    color: var(--CobaltBlue);
+    font-weight: bold;
+}
+#submit {
+    padding: 1rem 2rem;
+    background-color: var(--DarkGrayBlue);
+    border: 1px solid var(--DarkGrayBlue);
+    color: var(--White);
+    font-weight: 400;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: var(--White);
+    color: var(--DarkGrayBlue);
+    transition: 0.7s;
+   
+}

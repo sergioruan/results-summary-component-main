@@ -5,43 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <main id="card">
+    <section id="p1">
+      <p id="result">Your Result</p>
+      <div id="notes">
+        <p id="n76">76</p>
+        <p id="n100">of 100</p>
+      </div>
+    <p id="tittle">Great</p>  
+    <p id="descript">You scored highed than 65% of the people 
+      who have taken these tests.
+    </p>
+    </section>
+    <section id="p2">
+      <h1 id="tittleP2">Summary</h1>
+      <div id="categorias">
+        <div class="caixas" id="reaction">
+          <div class="icons">
+            <img src="assets/images/icon-reaction.svg" alt="Reaction Icon" id="reactionImg">
+            <p id="reactionTxt">Reaction</p>
+          </div>
+          <div class="score">
+            <p class="realScore">80</p>
+            <p class="totalScore">/ 100</p>
+          </div>
+        </div>
+        <div class="caixas" id="memory">
+          <div class="icons">
+            <img src="assets/images/icon-memory.svg" alt="Memory Icon" id="memoryImg">
+            <p id="memoryTxt">Memory</p>
+          </div>
+          <div class="score">
+            <p class="realScore">92</p>
+            <p class="totalScore">/ 100</p>
+          </div>
+        </div>
+        <div class="caixas" id="verbal">
+          <div class="icons">
+            <img src="assets/images/icon-verbal.svg" alt="Verbal Memory" id="verbalImg">
+            <p id="verbalTxt">Verbal</p>
+          </div>
+          <div class="score">
+            <p class="realScore">61</p>
+            <p class="totalScore">/ 100</p>
+          </div>
+        </div>
+        <div class="caixas" id="visual">
+          <div class="icons">
+            <img src="assets/images/icon-visual.svg" alt="Visual Icon" id="verbalImg">
+            <p id="visualTxt">Visual</p>
+          </div>
+          <div class="score">
+            <p class="realScore">72</p>
+            <p class="totalScore">/ 100</p>
+          </div>
+        </div>
+      </div>
+      <button id="submit">Continue</button>
+    </section>
+  </main>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

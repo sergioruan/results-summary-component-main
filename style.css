@@ -30,20 +30,20 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Hanken', sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem; /* Tamanho da fonte base usando rem */
 }
 body {
-        display: flex;
-        height: 100vh;
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--PersianBlue);
 }
 #card {
     display: flex;
-    flex-flow: row wrap;
-    width: 730px;
-    
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-basis: 650px;
     border-radius: 25px;
     box-shadow: 1px 1px 8px var(--LightLavender);
 }
@@ -53,22 +53,22 @@ body {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    width: 50%;
     gap: 1rem;
     padding: 3rem;
-    width: 50%;
     border-radius: 25px;
-    background: linear-gradient(to bottom, var(--LightSlateBlue), var(--LightRoyalBlue))
+    background: linear-gradient(to bottom, var(--LightSlateBlue), var(--LightRoyalBlue));
 }
 #result {
     color: var(--LightLavender);
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 #notes {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 00rem;
+    gap: 0rem;
     padding: 2rem 3rem;
     background: linear-gradient(to top, var(--PersianBlue), var(--VioletBlue));
     border-radius: 50%;
@@ -79,13 +79,13 @@ body {
     font-size: 3rem;
 }
 #n100 {
-    font-size: 14px;
-    color: var(--LightLavender)
+    font-size: 0.8rem;
+    color: var(--LightLavender);
 }
 #tittle {
     font-weight: bold;
     color: var(--White);
-    font-size: 26px;
+    font-size: 1.6rem;
 }
 #descript {
     font-weight: 300;
@@ -100,7 +100,7 @@ body {
 }
 #tittleP2 {
     color: var(--DarkGrayBlue);
-    font-size: 26px;
+    font-size: 1.6rem;
 }
 #categorias {
     display: flex;
@@ -111,8 +111,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.7rem;
-    gap: 3rem;
+    padding: 0.5rem;
+    gap: 1rem;
     border-radius: 10px;
 }
 .icons {
@@ -169,8 +169,27 @@ body {
     cursor: pointer;
 }
 #submit:hover {
-    background-color: var(--White);
-    color: var(--DarkGrayBlue);
+    background: linear-gradient(to left, var(--LightRoyalBlue), var(--VioletBlue));;
+    color: var(--White);
     transition: 0.7s;
-   
+}
+
+
+@media screen and (max-width: 662px) {
+   body {
+    background-color: var(--White);
+    align-items: flex-start;
+   }
+   #card {
+    border-radius: 0;
+    flex-direction: column;
+    box-shadow: none;
+   }
+   #p1 {
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+   }
+   #p2 {
+    width: 100%;
+   }
 }
